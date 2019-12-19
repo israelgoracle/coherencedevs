@@ -1,0 +1,160 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.telefonica.coco.pom</groupId>
+		<artifactId>pom-Jee</artifactId>
+		<version>1.0.0-1</version>
+	</parent>
+
+	<groupId>com.telefonica.coco.api</groupId>
+	<artifactId>api-Coherence-CargaMasivaVAR</artifactId>
+	<version>1.0.0-1</version>
+
+
+	<name>api-Coherence-CargaMasivaVAR</name>
+	<description>Api Parameters.</description>
+
+	<properties>
+		<revision>1</revision>
+		<entrega>1</entrega>
+		<aplicacion>COCO</aplicacion>
+		<tipo.activo>api</tipo.activo>
+		<tecnologia.implementacion>JEE</tecnologia.implementacion>
+		<tomee.classifier>webprofile</tomee.classifier>
+		<m2eclipse.wtp.contextRoot>api-CargaMasivaVAR</m2eclipse.wtp.contextRoot>
+	</properties>
+	
+	<dependencies>
+	<!-- ******************** Dependencias API_FlowVars ******************** -->
+		<dependency>
+			<groupId>com.telefonica.coco.api</groupId>
+			<artifactId>api-jee-FlowVars</artifactId>
+			<version>1.0.0-2</version>
+		</dependency>
+			
+		<!-- ******************** Dependencias VAR ******************** -->
+		<dependency>
+			<groupId>com.telefonica.prov.var</groupId>
+			<artifactId>var-IdPlanTraversalMap</artifactId>
+			<version>3.0.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.telefonica.prov.var</groupId>
+			<artifactId>var-IdParentResource</artifactId>
+			<version>3.0.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.telefonica.prov.var</groupId>
+			<artifactId>var-IdCompatibilityResourceSpec</artifactId>
+			<version>3.0.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.telefonica.prov.var</groupId>
+			<artifactId>var-IdForcedResource</artifactId>
+			<version>3.0.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.telefonica.prov.var</groupId>
+			<artifactId>var-IdGroupMembers</artifactId>
+			<version>3.0.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.telefonica.prov.var</groupId>
+			<artifactId>var-IdInstancesWrongInInventory</artifactId>
+			<version>3.0.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.telefonica.prov.var</groupId>
+			<artifactId>var-IdPlanModulators</artifactId>
+			<version>3.0.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.telefonica.prov.var</groupId>
+			<artifactId>var-IdAllocationParameters</artifactId>
+			<version>3.0.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.telefonica.prov.var</groupId>
+			<artifactId>var-IdAllocatedResources</artifactId>
+			<version>3.0.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.telefonica.prov.var</groupId>
+			<artifactId>var-PO</artifactId>
+			<version>3.0.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.telefonica.prov.var</groupId>
+			<artifactId>var-IdCompatibilityBAFResources</artifactId>
+			<version>3.0.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.telefonica.prov.var</groupId>
+			<artifactId>var-IdTecSrvsImplementations</artifactId>
+			<version>3.0.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.telefonica.prov.var</groupId>
+			<artifactId>var-Scene</artifactId>
+			<version>3.0.0-SNAPSHOT</version>
+		</dependency>
+
+		<dependency>
+			<groupId>net.sourceforge.javacsv</groupId>
+			<artifactId>javacsv</artifactId>
+			<version>2.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.telefonica.coco.lib</groupId>
+			<artifactId>lib-jee-Test</artifactId>
+		</dependency>
+
+		<!-- ******************** COCO ******************** -->
+		<dependency>
+			<groupId>com.telefonica.coco.lib</groupId>
+			<artifactId>lib-jee-Header</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.telefonica.coco.lib</groupId>
+			<artifactId>lib-jee-Exception</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.telefonica.coco.lib</groupId>
+			<artifactId>lib-jee-Test</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.telefonica.coco.lib</groupId>
+			<artifactId>lib-jee-Logging</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.telefonica.coco.lib</groupId>
+			<artifactId>lib-jee-Security</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.bouncycastle</groupId>
+			<artifactId>bcprov-jdk16</artifactId>
+			<version>1.46</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.telefonica.coco.lib</groupId>
+			<artifactId>lib-jee-TelcoPropertySource</artifactId>
+		</dependency>
+
+
+		<!-- ***************** Oracle **************** -->
+		<dependency>
+			<groupId>com.oracle.coherence</groupId>
+			<artifactId>coherence</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.oracle</groupId>
+			<artifactId>ojdbc6</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+</project>

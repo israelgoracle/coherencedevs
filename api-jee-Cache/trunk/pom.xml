@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.telefonica.coco.pom</groupId>
+        <artifactId>pom-Jee</artifactId>
+        <version>1.0.0-16</version>
+    </parent>
+    <groupId>com.telefonica.coco.api</groupId>
+    <artifactId>api-jee-Cache</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <name>api-jee-FlowVars</name>
+    <description>Api Parameters.</description>
+    <properties>
+        <revision>1</revision>
+        <entrega>1</entrega>
+        <aplicacion>COCO</aplicacion>
+        <tipo.activo>api</tipo.activo>
+        <tecnologia.implementacion>JEE</tecnologia.implementacion>
+        <tomee.classifier>webprofile</tomee.classifier>
+        <m2eclipse.wtp.contextRoot>api-FlowVars</m2eclipse.wtp.contextRoot>
+        <database.id>1706478230,0,106</database.id>
+        <aris.id>c1103870-eaa4-11e5-41cb-005056ad6364</aris.id>
+    </properties>
+    <dependencies>
+        <!-- ******************** COCO ******************** -->
+        <dependency>
+            <groupId>com.telefonica.coco.lib</groupId>
+            <artifactId>lib-jee-Header</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.telefonica.coco.lib</groupId>
+            <artifactId>lib-jee-Exception</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.telefonica.coco.lib</groupId>
+            <artifactId>lib-jee-Test</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.telefonica.coco.lib</groupId>
+            <artifactId>lib-jee-Logging</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.telefonica.coco.lib</groupId>
+            <artifactId>lib-jee-Security</artifactId>
+        </dependency>
+<!--         <dependency> -->
+<!--             <groupId>org.bouncycastle</groupId> -->
+<!--             <artifactId>bcprov-jdk16</artifactId> -->
+<!--             <version>1.46</version> -->
+<!--         </dependency> -->
+        <dependency>
+            <groupId>com.telefonica.coco.lib</groupId>
+            <artifactId>lib-jee-TelcoPropertySource</artifactId>
+        </dependency>
+        <!-- ***************** Oracle **************** -->
+        <dependency>
+            <groupId>com.oracle.coherence</groupId>
+            <artifactId>coherence</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.oracle</groupId>
+            <artifactId>ojdbc6</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+</project>

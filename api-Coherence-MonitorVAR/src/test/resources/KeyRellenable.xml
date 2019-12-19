@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<IdPlanTraversalMap_VAR_KEY xmlns="http://telefonica.com/prov/var/IdPlanTraversalMap">
+    <CacheAccessKey>
+        <KeyType>1</KeyType>
+        <KeyValue>2</KeyValue>
+    </CacheAccessKey>
+    <MemoryStructure>
+        <StructureName>Julio</StructureName>
+    </MemoryStructure>
+</IdPlanTraversalMap_VAR_KEY>
